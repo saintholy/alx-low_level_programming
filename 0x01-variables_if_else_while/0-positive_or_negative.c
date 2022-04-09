@@ -16,18 +16,37 @@ n = rand() - RAND_MAX / 2;
 
 if (n==0)
 {
-printf("x: is zero\n", n);
+printf("number is zero\n", n);
 }
 
 else if (n<0)
 {
-printf("x: is negative\n", n);
+printf("number is negative\n", n);
 }
 
 else
 {
-printf("x: is positive\n", n);
+printf("number is positive\n", n);
 }
 
 return (0);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
