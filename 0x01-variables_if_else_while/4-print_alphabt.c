@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-char  alphapet;
+char  alphabet;
 
 for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 {
@@ -17,7 +17,7 @@ continue;
 else if (alphabet == 'e')
 continue;
 
-putchar(alphaet);
+putchar(alphabet);
 {
 
 putchar('\n')
