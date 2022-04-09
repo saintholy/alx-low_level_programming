@@ -22,7 +22,6 @@ printf("x: is zero\n", n);
 else if (n<0)
 {
 printf("x: is negative\n", n);
-
 }
 
 else
@@ -31,5 +30,4 @@ printf("x: is positive\n", n);
 }
 
 return (0);
-
 }
