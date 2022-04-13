@@ -1,32 +1,36 @@
 #include "main.h"
 #include <stdio.h>
-
-
 /**
- * print_to_98 - prints numbers to 98
- * @n: starting integer
- *
- * Description: prints all natural number from n - 98
- *
- * Return: void
+ * print_to_98 - print all the numbers between the provided number and 98
+ * @n: integer to start at
+ * Return: Void.
  */
+
 void print_to_98(int n)
 {
-	if (n < 98)
+	int i = 0;
+
+	if (n > 98)
 	{
-		while (n < 98)
+		for (i = n; i >= 98; i--)
 		{
-			printf("%d, ", n);
-			n++;
+			if (i != n)
+			{
+				printf(", ");
+			}
+			printf("%d", i);
 		}
 	}
-	else if (n > 98)
+	else
 	{
-		while (n > 98)
+		for (i = n; i <= 98 ; i++)
 		{
-			printf("%d, ", n);
-			n--;
+			if (i != n)
+			{
+				printf(", ");
+			}
+			printf("%d", i);
 		}
 	}
-	printf("98\n");
+	putchar('\n');
 }
