@@ -1,19 +1,38 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+int _putchar(char c);
 
 /**
- * print_numbers - print 0 - 9
- *             only using _putchar twice
+ * print_number - like a hello world
  *
- * Return: Always 0 (Success)
-*/
+ * @n: params an integer
+ *
+ * No return
+ */
 
-void print_numbers(void)
+
+void print_number(int n)
 {
-	int num = 0;
 
-	do {
-		_putchar(num + 48);
-		num++;
-	} while (num >= 0 && num <= 9);
-	_putchar('\n');
+	unsigned int n1 = 0;
+
+	if  (n < 0)
+	{
+		n1 = -n;
+		_putchar('-');
+	}
+
+	else
+	{
+		n1 = n;
+	}
+
+	if (n1 / 10)
+	{
+		print_number(n1 / 10);
+	}
+
+	_putchar((n1 % 10) + '0');
 }
